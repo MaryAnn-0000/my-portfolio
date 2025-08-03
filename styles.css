@@ -1,11 +1,7 @@
-/* --------------------
-    Google Font Import
--------------------- */
+/* Google Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* --------------------
-    Root Variables
--------------------- */
+/* Root Variables */
 :root {
   --forest: #1B4332;
   --mint: #B7E4C7;
@@ -15,9 +11,7 @@
   --transition: 0.4s ease-in-out;
 }
 
-/* --------------------
-    Base Reset
--------------------- */
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
@@ -35,19 +29,14 @@ body {
   color: var(--black);
   overflow-x: hidden;
 }
-
-
-  
-
+/* Loader*/
 @keyframes loader {
   0% { opacity: 1; background-position: 0 0; }
   90% { opacity: 1; }
   100% { opacity: 0; pointer-events: none; }
 }
 
-/* --------------------
-    Header & Nav
--------------------- */
+/*Header & Nav*/
 header {
   background: var(--forest);
   color: var(--white);
@@ -85,9 +74,7 @@ nav a:hover {
   text-shadow: 0 0 5px var(--mint);
 }
 
-/* --------------------
-    Section Base
--------------------- */
+/* Section Base */
 section {
   padding: 6vh 5vw;
   animation: fadeInUp 1s ease-out both;
@@ -115,9 +102,7 @@ p {
   margin-bottom: 1.5rem;
 }
 
-/* --------------------
-    Home Section
--------------------- */
+/*Home Section*/
 #home {
   background: linear-gradient(to right, var(--pale), var(--mint));
   text-align: center;
@@ -137,9 +122,7 @@ p {
   50% { transform: translateY(-15px); }
 }
 
-/* --------------------
-    Typing Effect
--------------------- */
+/*Typing Effect */
 #home h2::after {
   content: '|';
   animation: typing 2s steps(22) 1s forwards, blink 0.6s step-end infinite;
@@ -158,9 +141,7 @@ p {
   50% { opacity: 0; }
 }
 
-/* --------------------
-    Skills Section
--------------------- */
+/*Skills Section*/
 .card {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
@@ -180,9 +161,7 @@ p {
   color: var(--forest);
 }
 
-/* --------------------
-    Projects Section
--------------------- */
+/*Projects Section*/
 #projects a {
   background: var(--forest);
   color: var(--white);
@@ -200,9 +179,7 @@ p {
   transform: scale(1.05);
 }
 
-/* --------------------
-    Contact Form
--------------------- */
+/*Contact Form */
 form {
   display: flex;
   flex-direction: column;
@@ -248,9 +225,7 @@ button:hover {
   100% { transform: scale(1); }
 }
 
-/* --------------------
-    Aside
--------------------- */
+/*Aside*/
 aside {
   background: var(--pale);
   padding: 4vh 5vw;
@@ -262,9 +237,7 @@ aside a {
   font-weight: 600;
 }
 
-/* --------------------
-    Footer
--------------------- */
+/*Footer*/
 footer {
   background: var(--forest);
   color: var(--white);
@@ -273,9 +246,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* --------------------
-    Responsive Design
--------------------- */
+/*Responsive Design */
 @media (max-width: 768px) {
   header, nav ul {
     flex-direction: column;
@@ -300,9 +271,7 @@ footer {
   }
 }
 
-/* ---------------------------------
-    Mobile Hamburger Menu Styling
----------------------------------- */
+/* Mobile Hamburger Menu Styling*/
 #menu-toggle {
   display: none;
 }
@@ -594,7 +563,7 @@ footer {
   word-wrap: break-word;
 }
 
-/* Typing animation without blinking cursor */
+/* Typing animation  */
 @keyframes typing {
   from {
     width: 0;
